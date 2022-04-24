@@ -2,19 +2,20 @@ node('master')
 
 {
 
-stage('Continuous Download') 
+stage('ContinuousDownload_master') 
    
 	 {
 	
-    git 'https://github.com/sunildevops77/maven.git'
+    git 'https://github.com/nagshaik/maven.git'
     
 	}
 
-stage('Continuous build') 
+stage('Continuousbuild_master') 
    
 	 {
 	
    sh label: 'Slave_lab', script: 'mvn package'
 	}
 }
+
 
