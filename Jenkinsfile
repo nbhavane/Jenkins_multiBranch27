@@ -14,6 +14,6 @@ stage('Continuousbuild_loans')
    
 	 {
 	
-   sh label: 'Slave_lab', script: 'mvn package'
+   sh label: '', script: 'mvn package'
 	}
 }
